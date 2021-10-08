@@ -33,8 +33,8 @@ public class Intro extends ApplicationAdapter {
     batch = new SpriteBatch(); // sans le new l'objet pointe vers null et va créer un erreur
     //img = new Texture("dvd.jpg");
     imgs = new Texture[2];
-    imgs[0] = new Texture("dvd.jpg");
-    imgs[1] = new Texture("dvdc.jpg");
+    imgs[0] = new Texture("dvd.png");
+    imgs[1] = new Texture("dvdc.png");
     coordonneesX = new int[2];
     coordonneesY = new int[2];
     hauteursImg = new int[2];
@@ -44,8 +44,8 @@ public class Intro extends ApplicationAdapter {
     couleursDVD = new int[2];
     coordonneesX[0] = 0; 
     coordonneesY[0] = 0;
-    coordonneesX[1] = largeurFenetre - largeurImg;
-    coordonneesY[1] = hauteurFenetre - hauteurImg;
+    coordonneesX[1] = 400;
+    coordonneesY[1] = 0;
     couleursDVD[0] = 0;
     couleursDVD[1] = 5;
     hauteurFenetre = Gdx.graphics.getHeight();
@@ -56,7 +56,7 @@ public class Intro extends ApplicationAdapter {
     largeurFenetre = Gdx.graphics.getWidth();
     directionsEnY[0] = 0;
     directionsEnX[0] = 0;
-    directionsEnY[1] = 0;
+    directionsEnY[1] = 1;
     directionsEnX[1] = 0;
   }
 
@@ -115,11 +115,11 @@ public class Intro extends ApplicationAdapter {
 
   public void defCouleurDVD() {
     for (int i=0; i<2; i++){
-     if (couleursDVD[i] >= 10){
-       couleursDVD[i] = 0;
+      if (couleursDVD[i] >= 10){
+        couleursDVD[i] = 0;
       }
       else if (couleursDVD[i] == 0){
-        imgs[i] = new Texture("dvd.jpg");
+        imgs[i] = new Texture("dvd.png");
       }
       else if (couleursDVD[i] == 1){
         imgs[i] = new Texture("dvdj.jpg");
@@ -131,22 +131,22 @@ public class Intro extends ApplicationAdapter {
         imgs[i] = new Texture("dvdv.jpg");
       }
       else if (couleursDVD[i] == 4){
-        imgs[i] = new Texture("dvdb.jpg");
+        imgs[i] = new Texture("dvdb.png");
       }
       else if (couleursDVD[i] == 5){
-        imgs[i] = new Texture("dvdc.jpg");
+        imgs[i] = new Texture("dvdc.png");
       }
       else if (couleursDVD[i] == 6){
-        imgs[i] = new Texture("dvdlv.jpg");
+        imgs[i] = new Texture("dvdlv.png");
       }
      else if (couleursDVD[i] == 7){
-       imgs[i] = new Texture("dvdg.jpg");
+       imgs[i] = new Texture("dvdg.png");
       }
       else if (couleursDVD[i] == 8){
-       imgs[i] = new Texture("dvdvio.jpg");
+       imgs[i] = new Texture("dvdvio.png");
       }
      else{
-       imgs[i] = new Texture("dvdo.jpg");
+       imgs[i] = new Texture("dvdo.png");
       }
     }
   }
