@@ -122,13 +122,13 @@ public class Intro extends ApplicationAdapter {
         imgs[i] = new Texture("dvd.png");
       }
       else if (couleursDVD[i] == 1){
-        imgs[i] = new Texture("dvdj.jpg");
+        imgs[i] = new Texture("dvdj.png");
       }
       else if (couleursDVD[i] == 2){
-        imgs[i] = new Texture("dvdr.jpg");
+        imgs[i] = new Texture("dvdr.png");
       }
       else if (couleursDVD[i] == 3){
-        imgs[i] = new Texture("dvdv.jpg");
+        imgs[i] = new Texture("dvdv.png");
       }
       else if (couleursDVD[i] == 4){
         imgs[i] = new Texture("dvdb.png");
