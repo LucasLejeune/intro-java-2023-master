@@ -7,7 +7,8 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 
-public class Intro extends ApplicationAdapter {
+
+public class Intro extends ApplicationAdapter{
   SpriteBatch batch; //définition et nom de la variable(bleu) type de la variable(vert)
   //Texture img; 
   Texture[] imgs;
